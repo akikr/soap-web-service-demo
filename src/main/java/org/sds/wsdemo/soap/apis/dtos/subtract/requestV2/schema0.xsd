@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2003/05/soap-envelope">
+    <xsd:import schemaLocation="schema1.xsd" namespace="http://tempuri.org/" />
+    <xsd:element name="Envelope">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Body">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element xmlns:q1="http://tempuri.org/" ref="q1:Subtract" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xs:schema>
