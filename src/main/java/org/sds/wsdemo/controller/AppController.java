@@ -18,7 +18,7 @@ public class AppController {
     @Autowired
     private AppService appService;
 
-    @GetMapping("/addition")
+    @GetMapping("/add")
     public String doAddition(@RequestBody AdditionRequest request) {
         return appService.addition(request);
     }
